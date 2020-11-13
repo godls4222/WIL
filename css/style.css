@@ -1,0 +1,139 @@
+/* style.css */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul {list-style-type: none;}
+a {text-decoration: none;}
+body {
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 14px; 
+    text-align: center;
+    line-height: 1.8em;
+    color: #444;
+}
+
+h1 {margin: 20px 0;}
+.img-responsive {width: 100%;}
+#header > div {
+    width: 100%; height: 8vh;
+    background:#794645;
+    color: #000;
+    line-height: 8vh;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#main {
+    position: relative;
+    width: 100%; /* height: 100%; */
+    height: 40vh; /* 디바이스 높이 100% */
+    background: #ccc;
+    /* 이미지 사이즈 : 최소 750 x 1334px */
+    background-image: url(../img/title_2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /* outline: 2px solid red; */
+}
+#main > .title_text {
+    /* 배색: #b4dbdc */
+    background: #794645;
+    /* color: #557f80; */
+    position: absolute;
+    width: 100%; height: 8vh;
+    bottom: 0;
+    padding: 1em;
+    line-height: 1.4em;
+}
+#main > .title_text > .name {
+    /* margin-bottom: 1em; */
+    /* margin-top: 1em; */
+    font-size: 20px;
+    color: #000;
+}
+#main > .title_text .marriage {
+    color: #fff;
+    font-size: 14px;
+}
+#main > .title_text .date,
+#main > .title_text .address {
+    position: absolute;
+    top: 80px;
+}
+.address {margin-bottom: 1em;}
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.name > span {font-size: small;}
+
+/* 날짜, 장소 */
+#date_location {
+    position: relative;
+    width: 100%; height: 585px;
+    top: 292px;
+}
+#date_location > span {
+    position: absolute;
+    font-size: 100px;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 인사말(초대...) */
+#invitation {
+    width: 100%;
+    margin: 50px 0;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* outline: 2px solid red; */
+}
+#invitation > .title {
+    /* position: relative; */
+    padding: 10px 0; 
+    width: 100%;
+    background:  #794645;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* outline: 2px solid red; */
+}
+
+#invitation .child {
+    border-top: 2px solid #794645;
+    border-bottom: 2px solid #794645;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#invitation .child .info span {
+    font-weight: 700;
+    font-size: 16px;
+}
+p, i {vertical-align: middle;}
+
+.phone {
+    position: relative;
+    width: 100%; height: 80px;
+    background: #794645;
+}
+.phone > p {
+    color: #fff;
+}
+.phone a{color: #000;}
+/* 갤러리 */
+#gallery > .title {
+    padding: 20px 0;
+    background: #794645;
+    color: #fff;
+    font-size: 18px;
+}
+#gallery .small_img li {padding: 0;}
+
+/* 오시는 길 */
+#location {
+    padding: 50px 0;
+}
